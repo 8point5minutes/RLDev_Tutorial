@@ -8,7 +8,7 @@ class GameMap:
     def __init__(self, width: int, height: int):
         #setting up a floor
         self.width, self.height = width, height
-        self.tiles = np.full((width, height), fill_value=tile_types.wall, order="F")
+        self.tiles = np.full((width, height), fill_value=tile_types.floor, order="F")
 
     #did we not accidentally generate something in the imaginary plane
     def in_bounds(self, x: int, y: int) -> bool:

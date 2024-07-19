@@ -14,9 +14,9 @@ def main() -> None:
     map_width = 80
     map_height = 45
     #room parameters
-    room_max_size = 10
-    room_min_size = 6
-    max_rooms = 30
+    room_max_size = 12
+    room_min_size = 5
+    max_rooms = 100
     #player info
     player_x = int(screen_width / 2)
     player_y = int(screen_height / 2)
@@ -46,7 +46,7 @@ def main() -> None:
         screen_width,
         screen_height,
         tileset=tileset,
-        title="Yet Another Roguelike Tutorial",
+        title="Eminences of Kybernabad",
         vsync=True,
     ) as context:
         #creating console; F swaps x and y so it's [x, y]
